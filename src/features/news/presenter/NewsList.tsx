@@ -9,7 +9,7 @@ type Props = {
   newsList: MicroCMSListResponse<News>;
 };
 
-export const NewsListPresenter = ({ greeting, newsList }: Props) => {
+export const NewsList = ({ greeting, newsList }: Props) => {
   return (
     <>
       <h1>{greeting.message}</h1>

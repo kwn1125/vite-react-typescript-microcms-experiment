@@ -1,6 +1,6 @@
 import { useGetGreeting } from "@/features/news/api/getGreeting";
 import { useGetNews } from "@/features/news/api/getNews";
-import { NewsListPresenter } from "@/features/news/presenter/NewsListPresenter";
+import { NewsList } from "@/features/news/presenter/NewsList";
 
 export const NewsListContainer = () => {
   const getGreetingResult = useGetGreeting();
@@ -8,7 +8,7 @@ export const NewsListContainer = () => {
 
   return (
     <>
-      <NewsListPresenter
+      <NewsList
         greeting={getGreetingResult.data}
         newsList={getNewsResult.data}
       />
